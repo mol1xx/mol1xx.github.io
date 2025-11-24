@@ -5,13 +5,61 @@
     <title>Контакты — Delivery Store</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body { font-family: Arial, sans-serif; background: #f6f7f9; margin:0; padding:0; }
-        .container {
-            max-width: 850px; margin: 40px auto; padding: 30px;
-            background: #fff; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        body { 
+            font-family: Arial, sans-serif; 
+            background: #f6f7f9; 
+            margin:0; 
+            padding:0; 
+            line-height: 1.6;
         }
-        nav a { margin: 0 10px; color: #0088cc; text-decoration:none; }
-        footer { text-align:center; margin:40px 0 20px; color:#777; }
+        .container {
+            max-width: 850px; 
+            margin: 40px auto; 
+            padding: 30px;
+            background: #fff; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        nav a { 
+            margin: 0 10px; 
+            color: #0088cc; 
+            text-decoration:none; 
+        }
+        footer { 
+            text-align:center; 
+            margin:40px 0 20px; 
+            color:#777; 
+        }
+        .business-info {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+            border-left: 4px solid #0088cc;
+        }
+        .business-info h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        .business-details {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+        .business-item {
+            padding: 5px 0;
+        }
+        .business-label {
+            font-weight: bold;
+            color: #555;
+        }
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
     </style>
 </head>
 <body>
@@ -23,6 +71,22 @@
 
     <p><strong>Email:</strong> orakovv@mail.ru</p>
     <p><strong>Telegram:</strong> <a href="https://t.me/Deliverystars_bot" target="_blank">@mol1xx</a></p>
+
+    <div class="business-info">
+        <h3>Реквизиты</h3>
+        <div class="business-details">
+            <div class="business-item">
+                <span class="business-label">Индивидуальный предприниматель:</span><br>
+                Ораков Владимир Сергеевич
+            </div>
+            <div class="business-item">
+                <span class="business-label">ИНН:</span> 502209135208
+            </div>
+            <div class="business-item">
+                <span class="business-label">ОГРНИП:</span> 325508100197031
+            </div>
+        </div>
+    </div>
 
     <h3>Форма обратной связи</h3>
     <p>Вы можете отправить сообщение через форму ниже:</p>
