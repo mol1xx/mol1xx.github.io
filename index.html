@@ -48,6 +48,29 @@
             margin: 0 10px;
             text-decoration: none;
         }
+        .pricing {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 25px 0;
+        }
+        .price-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid #e9ecef;
+        }
+        .price-amount {
+            font-size: 20px;
+            font-weight: bold;
+            color: #0088cc;
+            margin-bottom: 5px;
+        }
+        .price-cost {
+            font-size: 18px;
+            color: #28a745;
+        }
     </style>
 </head>
 <body>
@@ -63,6 +86,26 @@
         <li>Удобная и безопасная оплата</li>
         <li>Поддержка пользователей</li>
     </ul>
+
+    <h2>Наши тарифы</h2>
+    <div class="pricing">
+        <div class="price-item">
+            <div class="price-amount">Пакет 50</div>
+            <div class="price-cost">75 руб</div>
+        </div>
+        <div class="price-item">
+            <div class="price-amount">Пакет 100</div>
+            <div class="price-cost">150 руб</div>
+        </div>
+        <div class="price-item">
+            <div class="price-amount">Пакет 500</div>
+            <div class="price-cost">750 руб</div>
+        </div>
+        <div class="price-item">
+            <div class="price-amount">Пакет 1000</div>
+            <div class="price-cost">1500 руб</div>
+        </div>
+    </div>
 
     <h2>Как это работает</h2>
     <ol>
